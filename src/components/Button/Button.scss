@@ -1,7 +1,6 @@
 @import "../../colors";
 
 input[type="submit"] {
-  // background-color: $nfl-blue;
   color: white;
 }
 
@@ -15,6 +14,9 @@ a.jb-button-link {
   padding: 0.5em 0.8em;
 
   appearance: button;
+  // To fix mobile styles
+  -webkit-appearance: none;
+  -moz-appearance: none;
 
   color: white;
   font-weight: 900;

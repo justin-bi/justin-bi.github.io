@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "homepage": "http://justin-bi.github.io/website",
+  "homepage": "http://justin-bi.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

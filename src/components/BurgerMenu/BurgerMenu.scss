@@ -1,0 +1,84 @@
+@import "../../colors";
+
+.burger-menu-button {
+  height: 24px;
+  width: 24px;
+  float: right;
+}
+
+#burger-menu-icon {
+  fill: white;
+  background-color: transparent;
+  position: relative;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.burger-menu-background {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5000;
+  background-color: rgba(0, 0, 0, 0);
+  visibility: hidden;
+  transition: visibility 0s linear 0.5s, background-color 0.5s ease;
+  transition-delay: 0.5s, 0s;
+
+  &.burger-menu-background-active {
+    background-color: rgba(0, 0, 0, 0.4);
+    visibility: visible;
+    transition-delay: 0s;
+  }
+}
+
+.burger-menu-sidebar {
+  top: 0px;
+  right: 0px;
+  background-color: $grayscale-80;
+  height: 100vh;
+  position: fixed;
+  width: 280px;
+  z-index: 9000;
+  color: white;
+  padding: 16px 32px;
+  transition: all 0.5s ease;
+
+  &.sidebar-hidden {
+    transform: translateX(100%);
+  }
+  &.sidebar-visible {
+    transform: translateX(0%);
+  }
+}
+
+.burger-menu-close-button-div {
+  height: 24px;
+  width: 24px;
+  float: right;
+}
+
+#burger-menu-x-button {
+  position: relative;
+  fill: white;
+  height: 100%;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.bm-links {
+  margin: 72px 0px;
+}
+
+.bm-nav-link-div {
+  display: inline-block;
+  margin: 24px 0px;
+}
+
+.bm-nav-link {
+  font-size: 18px;
+  margin: 0;
+}

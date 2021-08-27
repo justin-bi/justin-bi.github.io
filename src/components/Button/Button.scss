@@ -1,0 +1,40 @@
+@import "../../colors";
+
+input[type="submit"] {
+  // background-color: $nfl-blue;
+  color: white;
+}
+
+.jb-button {
+  margin-bottom: 16px;
+}
+
+a.jb-button-link {
+  display: inline-block;
+  font-size: 18px;
+  padding: 0.5em 0.8em;
+
+  appearance: button;
+
+  color: white;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-decoration: none;
+
+  border-radius: 5px;
+
+  background-color: $primary-purple;
+  box-shadow: 0 0 0 2px $primary-purple inset;
+  -webkit-box-shadow: 0 0 0 2px $primary-purple inset;
+
+  &:hover {
+    background-color: $primary-purple-m-10;
+    box-shadow: 0 0 0 2px $primary-purple-m-10 inset;
+    -webkit-box-shadow: 0 0 0 2px $primary-purple-m-10 inset;
+    &:active {
+      background-color: $primary-purple-m-20;
+      box-shadow: 0 0 0 2px $primary-purple-m-20 inset;
+      -webkit-box-shadow: 0 0 0 2px $primary-purple-m-20 inset;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@import "../../colors";
+
+.nav-bar {
+  background-color: $primary-purple;
+  display: flex;
+  padding: 8px 24px;
+}
+
+#nav-link-group {
+  height: 100%;
+  flex: 3;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.active-link {
+  color: white;
+  font-weight: 900;
+}
+
+.home-link-group {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  color: white;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+
+.home-link-text {
+  margin: 0 16px;
+}
+
+#nav-bar-work-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 3px solid $primary-purple-p-20;
+  background-color: $primary-purple-p-20;
+}
+
+#nav-bar-links {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}

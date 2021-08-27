@@ -1,0 +1,18 @@
+@import "../../colors";
+
+.button-group {
+  & .jb-button {
+    margin-right: 1em;
+  }
+}
+
+.project-div + .project-div {
+  &:before {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 2px;
+    margin: 24px auto;
+    background-color: $grayscale-10;
+  }
+}

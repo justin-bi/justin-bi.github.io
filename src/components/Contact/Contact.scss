@@ -1,0 +1,38 @@
+@import "../../colors";
+
+.icon-group svg {
+  fill: $primary-purple;
+  height: 80px;
+  &:active {
+    fill: $primary-purple-m-40;
+  }
+  &:hover {
+    fill: $primary-purple-m-20;
+    &:active {
+      fill: $primary-purple-m-40;
+    }
+  }
+}
+
+.icon-group {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contact-div {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  text-align: center;
+  margin: 0 0.9em;
+  & .contact-div-text {
+    margin: 0.5em auto;
+    & a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

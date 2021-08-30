@@ -2,6 +2,11 @@ import React from "react";
 import "./Intro.scss";
 import workImage from "../../images/photo.png";
 
+import Button from "../Button";
+
+import resume from "../../pdfs/Justin Bi Resume.pdf";
+import transcript from "../../pdfs/transcript.pdf";
+
 function Intro() {
   return (
     <section id="#intro-section">
@@ -30,6 +35,11 @@ function Intro() {
             At the moment, this site contains just this introduction and my
             Projects section. Stay tuned for more!
           </p>
+
+          <div className="button-group" id="intro-button-group">
+            <Button value="Resume" type="link" href={resume} />
+            <Button value="Transcript" type="link" href={transcript} />
+          </div>
         </div>
       </div>
     </section>
